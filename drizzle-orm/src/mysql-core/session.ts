@@ -1,7 +1,6 @@
-import { FieldPacket, OkPacket, ResultSetHeader, RowDataPacket } from 'mysql2/promise';
-import { Query, SQL } from '~/sql';
-import { MySqlDialect } from './dialect';
-import { SelectFieldsOrdered } from './query-builders/select.types';
+import type { MySqlDialect } from '~/mysql-core/dialect';
+import type { SelectFieldsOrdered } from '~/mysql-core/query-builders/select.types';
+import type { Query, SQL } from '~/sql';
 
 export interface QueryResultHKT {
 	readonly $brand: 'MySqlQueryRowHKT';
